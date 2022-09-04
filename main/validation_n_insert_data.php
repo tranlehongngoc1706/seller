@@ -46,7 +46,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if(($nameErr == "") && ($descriptionErr == "") && ($priceErr == "")){
         //Image upload
-        $target_dir = "../fullstack/img/ ";
+        $target_dir = "../img/";
         $target_file = $target_dir . basename($_FILES["image"]["name"]);
         move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
 
